@@ -65,8 +65,8 @@ namespace Loader
 			PatchMemory(0x46AA59, { 0x90, 0x90 });	// Required to force update FonixData.cdf path in TLS
 
 			// Add logging. Must be done after static constructors.
-			((int(*)(void *))(0x8BF320))(&CreationKit::FaceFXLogCallback);
-			DetourFunction(0x40AFC0, &CreationKit::LogCallback);
+			//((int(*)(void *))(0x8BF320))(&CreationKit::FaceFXLogCallback);
+			//DetourFunction(0x40AFC0, &CreationKit::LogCallback);
 
 			return true;
 		}
@@ -109,8 +109,8 @@ namespace Loader
 			PatchMemory(0x702F0C, { 0x90, 0x90, 0x90, 0x90, 0x90, 0x90 });	// Required to force update FonixData.cdf path in TLS
 
 			// Add logging. Must be done after static constructors.
-			((int(*)(void *))(0x105BD10))(&CreationKit::FaceFXLogCallback);
-			DetourFunction(0x1C490D0, &CreationKit::LogCallback);
+			//((int(*)(void *))(0x105BD10))(&CreationKit::FaceFXLogCallback);
+			//DetourFunction(0x1C490D0, &CreationKit::LogCallback);
 
 			return true;
 		}

@@ -30,8 +30,8 @@ namespace CreationKit
 	void SetFaceFXLanguage(const char *Language);
 	void SetFaceFXAutoResampling(bool Resample);
 
-	void FaceFXLogCallback(const char *Text, int Type);
-	void LogCallback(int Type, const char *Format, ...);
+	//void FaceFXLogCallback(const char *Text, int Type);
+	//void LogCallback(int Type, const char *Format, ...);
 
 	void *__fastcall MemoryManager_Alloc(void *Thisptr, void *_EDX, uint32_t Size, uint32_t Alignment, bool Aligned);
 	void __fastcall MemoryManager_Free(void *Thisptr, void *_EDX, void *Ptr, bool Aligned);
